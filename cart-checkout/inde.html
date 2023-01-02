@@ -1,0 +1,83 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <form name="writes" onsubmit="return write_below(this);">
+            <fieldset>
+                <h4>Cek Validasi Tiket</h4>
+                <div>
+                    <label for="nama">Nama Pelanggan:</label>
+                    <br>
+                    <input required type="text" name="nama_pelanggan" id="nama" maxlength="30">
+                </div>
+                <div>
+                    <label for="email">Email:</label>
+                    <br>
+                    <input required type="email" name="" id="email_pelanggan">
+                </div>
+                <div>
+                    <label for="jam">Jam Keberengkatan:</label>
+                    <br>
+                    <input required type="time" name="" id="jam_keberangkatan">
+                </div>
+                <div>
+                    <label for="tujuan">Tujuan Keberengkatan:</label>
+                    <br>
+                    <input required type="text" name="" id="tujuan_keberangkatan">
+                </div>
+                <div>
+                    <label for="tiket">Jumlah Tiket:</label>
+                    <br>
+                    <input required type="number" name="" id="jumlah_tiket" max="10" min="1">
+                </div>
+                <input type="submit">
+                <br>
+                <input type="checkbox" name="" id="toggle"><label for="toggle">buat tiket baru</label>
+            </fieldset>
+        </form>
+        <div id="result">
+            <fieldset>
+                <legend>Air-Code Flight Ticket</legend>
+                <div>
+                    <label for="tiket-nama">Nama Pelanggan:</label>
+                    <br>
+                    <input readonly type="text" name="" id="tiket-nama">
+                </div>
+                <div>
+                    <label for="tiket-email">Email:</label>
+                    <br>
+                    <input readonly type="email" name="" id="tiket-email">
+                </div>
+                <div>
+                    <label for="tiket-jam">Jam Keberengkatan:</label>
+                    <br>
+                    <input readonly type="time" name="" id="tiket-jam">
+                </div>
+                <div>
+                    <label for="tiket-tujuan">Tujuan Keberengkatan:</label>
+                    <br>
+                    <input readonly type="text" name="" id="tiket-tujuan">
+                </div>
+                <div>
+                    <label for="tiket-tiket">Jumlah Tiket:</label>
+                    <br>
+                    <input readonly type="number" name="" id="tiket-tiket">
+                </div>
+                <input type="submit">
+                <br>
+                <input type="checkbox" name="" id="toggle"><label for="toggle">buat tiket baru</label>
+            </fieldset>
+        </div>
+    </div>
+</body>
+
+</html>
